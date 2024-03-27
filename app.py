@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from dotenv import load_dotenv
 
 app = Flask(__name__, template_folder='templates')
 

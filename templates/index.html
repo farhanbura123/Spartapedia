@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <title>My portofolio</title>
+
+    <!-- CSS style -->
+    <style>
+      * {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .jumbotron {
+        padding: 6rem;
+        background-color: rgb(234, 226, 226);
+      }
+
+      .mycontact {
+        margin-top: 10px;
+        width: 95%;
+        max-width: 500px;
+        margin: 20px auto 20px auto;
+        padding: 20px;
+      }
+      .mycontact > button {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+
+  <!-- Navbar -->
+  <body id="home">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a href="" class="navbar-brand">My portofolio</a>
+        <div>
+          <button
+            class="navbar-toggler"
+            data-bs-target="#myCollapse"
+            data-bs-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item text-uppercase">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="#project" class="nav-link">Project</a>
+              </li>
+              <li class="nav-item text-uppercase">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile -->
+    <section class="jumbotron">
+      <div
+        class="row flex-lg-row-reverse align-items-center mb-5 g-3 py-5 justify-content-md-start"
+      >
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="{{ url_for('static', filename='../static/satu.jpeg') }}"
+            class="d-block mx-md-auto img-fluid rounded-circle"
+            width="350"
+            alt="Bootstrap Themes"
+            height="200"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-5">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Halo I'am Farhan
+          </h1>
+          <p class="lead">
+            Hello, I'm Farhan, a 6th semester student of the Information
+            Technology Education study program, Kendari Muhammdiyah University,
+            class of 2021. I have an interest in a career in the world Education
+            and information technology, therefore I want to broaden my knowledge
+            and my experience through the independent campus program.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button
+              type="button"
+              class="btn btn-outline-secondary btn-lg px-4 mt-2"
+              fdprocessedid="swel9"
+            >
+              Download cv
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Header Project gallery -->
+    <div>
+      <main>
+        <section class="py-5 text-center container mt-5" id="project">
+          <div class="row py-md-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                Project
+              </h1>
+              <p class="lead text-body-secondary">
+                Mini project kampus tugas kuliah Membuat desain web simak
+                sekolah dasar
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Gallery project -->
+        <div class="bg-body-tertiary mar mb-5">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img
+                    src="{{ url_for('static', filename='../static/Screenshot (47).png') }}"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <p class="card-text">Design Landing page.</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img
+                    src="{{ url_for('static', filename='../static/Screenshot (48).png') }}"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <p class="card-text">Design login page.</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img
+                    src="{{ url_for('static', filename='../static/Screenshot (52).png') }}"
+                    alt=""
+                  />
+                  <div class="card-body">
+                    <p class="card-text">Design Menu lainnya.</p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="btn-group"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Contact -->
+    <section class="Contact form" id="contact">
+      <div class="mycontact">
+        <h3
+          class="text-center display-5 fw-bold text-body-emphasis lh-1 mb-4 mt-5"
+        >
+          Hubungi saya
+        </h3>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Masukan Nama"
+          />
+          <label for="floatingInput">Nama</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Masukan Email"
+          />
+          <label for="floatingInput">Email</label>
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Ayo Kita Berkomunikasi"
+            id="floatingTextarea"
+          ></textarea>
+          <label for="floatingTextarea">Masukan Pesan</label>
+        </div>
+        <button type="button" class="btn btn-outline-secondary">
+          Kirim Pesan
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <p class="col-md-2 mb-0 text-body-secondary row justify-content-center">
+        © 2024 Bootstrap, Farhan
+      </p>
+
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+      >
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+
+      <ul class="nav col-md-4 justify-content-md-center bg">
+        <li class="nav-item">
+          <a
+            href="https://www.facebook.com/DhuridaFrhan"
+            class="nav-link px-2 text-body-secondary"
+            >Facebook</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://www.instagram.com/dhuridafrhan_/"
+            class="nav-link px-2 text-body-secondary"
+            >Instagram</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://github.com/farhanbura123"
+            class="nav-link px-2 text-body-secondary"
+            >github</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
